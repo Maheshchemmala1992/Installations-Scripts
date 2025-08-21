@@ -29,3 +29,19 @@ terraform -version
 echo "Terraform installation completed successfully."
 
 # chmod +x install_terraform.sh
+
+
+/*
+provider "aws" {
+  region = "us-east-2"
+}
+
+resource "aws_instance" "one" {
+  ami           = "ami-0d1b5a8c13042c939"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "mahesh"
+  }
+}
+*/
